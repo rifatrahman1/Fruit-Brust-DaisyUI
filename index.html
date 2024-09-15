@@ -16,6 +16,15 @@
                 font-family: "Lato", sans-serif;
             }
          </style>
+         <script>
+            module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+         </script>
     <title>Fruit Brust Daisy UI</title>
 </head>
 <body class="">
@@ -78,7 +87,7 @@
 
         <!-- banner section start -->
         <div>
-            <div class="carousel w-full">
+            <div class="carousel lg:w-full">
                 <!-- slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full h-[70vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] flex items-center justify-center rounded-2xl">
                   
@@ -136,26 +145,26 @@
                   </div>
                 </div>
               </div>
-              <div class="flex ">
+              <div class="absolute right-0 left-0 flex justify-evenly items-center text-xl text-p-tag font-medium w-[1100px] mx-auto text-center bg-white rounded-2xl space-y-4 shadow-2xl -mt-24 p-4">
                 <div>
                     <img src="images/fruit1.png" alt="">
-                    <p>Grape</p>
+                    <p class="text-gray-600">Grape</p>
                 </div>
                 <div>
                     <img src="images/fruit2.png" alt="">
-                    <p>Orange</p>
+                    <p class="text-gray-600">Orange</p>
                 </div>
                 <div>
                     <img src="images/fruit3.png" alt="">
-                    <p>Mango</p>
+                    <p class="text-gray-600">Mango</p>
                 </div>
                 <div>
                     <img src="images/fruit4.png" alt="">
-                    <p>Strawberry</p>
+                    <p class="text-gray-600">Strawberry</p>
                 </div>
                 <div>
                     <img src="images/fruit5.png" alt="">
-                    <p>Pomegranate</p>
+                    <p class="text-gray-600">Pomegranate</p>
                 </div>
               </div>
         </div>
@@ -164,8 +173,70 @@
     <!-- header section end -->
     
     <!-- main section start -->
-     <main>
-
+     <main class="container max-w-screen-xl mx-auto">
+        <!-- -----deal of the day start------ -->
+         <section class="my-64">
+            <div>
+                <div class="flex items-center">
+                    <div class="space-y-5 ">
+                        <h1 class="text-5xl font-extrabold">Deal of the day</h1>
+                        <p class="text-base w-2/3 ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                    <div>
+                        <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+                            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                              <span class="countdown font-mono text-5xl">
+                                <span style="--value:15;"></span>
+                              </span>
+                              days
+                            </div>
+                            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                              <span class="countdown font-mono text-5xl">
+                                <span style="--value:10;"></span>
+                              </span>
+                              hours
+                            </div>
+                            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                              <span class="countdown font-mono text-5xl">
+                                <span style="--value:24;"></span>
+                              </span>
+                              min
+                            </div>
+                            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                              <span class="countdown font-mono text-5xl">
+                                <span style="--value:${counter};"></span>
+                              </span>
+                              sec
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-24">
+                    <div class="flex flex-col items-center justify-center px-4 py-6 border-2 rounded-xl space-y-4">
+                        <img src="images/fruit6.png" alt="">
+                        <h4 class="text-2xl font-bold">12.90$ - 18.85$</h4>
+                        <div class="divider"></div>
+                        <p class="text-base font-medium text-gray-600">Appels</p>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input
+                              type="radio"
+                              name="rating-2"
+                              class="mask mask-star-2 bg-orange-400"
+                              checked="checked" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          </div>
+                          <p class="text-[18px] text-orange-500">Details</p>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+         </section>
+        <!-- -----deal of the day end------ -->
      </main>
     <!-- main section end -->
 

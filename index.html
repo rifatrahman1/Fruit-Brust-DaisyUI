@@ -10,6 +10,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- ----font awesome----- -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- font style -->
          <style>
             .lato-font{
@@ -30,6 +32,7 @@
 <body class="">
     <!-- header section start -->
      <header class="container max-w-screen-xl mx-auto">
+      
         <!-- start navbar start -->
          <nav class="my-14">
             <div class="navbar bg-[#F85559] h-32 rounded-full">
@@ -52,7 +55,7 @@
                     
                   </div>
                 
-                  <div class="space-x-8 text-xl font-medium text-white mx-12">
+                  <div class="space-x-8 hidden lg:flex text-xl font-medium text-white mx-12">
                     <a href="">Home</a>
                     <a href="">About</a>
                     <a href="">Shop</a>
@@ -66,7 +69,7 @@
                 </div>
                 <div class="navbar-end">
                   <div>
-                    <label class="input rounded-full flex items-center gap-2 mx-12">
+                    <label class="input hidden lg:flex rounded-full flex items-center gap-2 mx-12">
                         <input type="text" class="grow" placeholder="Search" />
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -86,15 +89,15 @@
         <!-- start navbar end -->
 
         <!-- banner section start -->
-        <div>
-            <div class="carousel lg:w-full">
+        <div class="">
+            <div class="carousel">
                 <!-- slide 1 -->
-                <div id="slide1" class="carousel-item relative w-full h-[70vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] flex items-center justify-center rounded-2xl">
+                <div id="slide1" class="carousel-item relative lg:w-full h-[70vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] flex items-center justify-center rounded-2xl">
                   
                     <div class="text-center w-2/3 mx-auto space-y-7">
-                        <h1 class="text-7xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
+                        <h1 class="text-3xl lg:text-7xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
                         <p class="text-xl text-white font-medium">We supply highly quality organic products</p>
-                        <button class="btn btn-error text-white text-xl font-extrabold">Show All</button>
+                        <button class="btn btn-error text-white text-xl font-extrabold">Shop Now</button>
                     </div>
                   <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                     
@@ -103,12 +106,12 @@
                   </div>
                 </div>
                 <!-- slide 2 -->
-                <div id="slide2" class="carousel-item relative w-full h-[70vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner2.png)] flex items-center justify-center">
+                <div id="slide2" class="carousel-item relative lg:w-full h-[70vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner2.png)] flex items-center justify-center rounded-2xl">
                   
                     <div class="text-center w-2/3 mx-auto space-y-7">
                         <h1 class="text-7xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
                         <p class="text-xl text-white font-medium">We supply highly quality organic products</p>
-                        <button class="btn btn-error text-white text-xl font-extrabold">Show All</button>
+                        <button class="btn btn-error text-white text-xl font-extrabold">Shop Now</button>
                     </div>
                   <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                     
@@ -117,12 +120,13 @@
                   </div>
                 </div>
                 <!-- slide 3 -->
-                <div id="slide3" class="carousel-item relative w-full h-[70vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner3.png)] flex items-center justify-center">
+                <div id="slide3" class="carousel-item relative lg:w-full h-[70vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner3.png)] flex items-center justify-center rounded-2xl">
                   
                     <div class="text-center w-2/3 mx-auto space-y-7">
                         <h1 class="text-7xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
                         <p class="text-xl text-white font-medium">We supply highly quality organic products</p>
-                        <button class="btn btn-error text-white text-xl font-extrabold">Show All</button>
+                        <button class="btn btn-error text-white text-xl font-extrabold">Shop Now</button>
+                        
                     </div>
                   <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                     
@@ -131,12 +135,12 @@
                   </div>
                 </div>
                 <!-- slide 4 -->
-                <div id="slide4" class="carousel-item relative w-full h-[70vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner4.png)] flex items-center justify-center">
+                <div id="slide4" class="carousel-item relative lg:w-full h-[70vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner4.png)] flex items-center justify-center rounded-2xl">
                   
                     <div class="text-center w-2/3 mx-auto space-y-7">
                         <h1 class="text-7xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
                         <p class="text-xl text-white font-medium">We supply highly quality organic products</p>
-                        <button class="btn btn-error text-white text-xl font-extrabold">Shop All</button>
+                        <button class="btn btn-error text-white text-xl font-extrabold">Shop Now</button>
                     </div>
                   <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                     
@@ -145,7 +149,7 @@
                   </div>
                 </div>
               </div>
-              <div class="absolute right-0 left-0 flex justify-evenly items-center text-xl text-p-tag font-medium w-[1100px] mx-auto text-center bg-white rounded-2xl space-y-4 shadow-2xl -mt-24 p-4">
+              <div class="absolute right-0 left-0 flex justify-evenly items-center text-xl font-medium w-[640px] md:w-[800px] lg:w-[1100px] mx-auto text-center bg-white rounded-2xl space-y-4 shadow-2xl -mt-24 p-4">
                 <div>
                     <img src="images/fruit1.png" alt="">
                     <p class="text-gray-600">Grape</p>
@@ -175,9 +179,9 @@
     <!-- main section start -->
      <main class="container max-w-screen-xl mx-auto">
         <!-- -----deal of the day start------ -->
-         <section class="my-64">
+         <section class="my-72">
             <div>
-                <div class="flex items-center">
+                <div class="flex flex-col lg:flex-row items-center">
                     <div class="space-y-5 ">
                         <h1 class="text-5xl font-extrabold">Deal of the day</h1>
                         <p class="text-base w-2/3 ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -211,7 +215,7 @@
                           </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-24">
+                <div class="grid grid-cols-1 p-10 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-14">
                     <div class="flex flex-col items-center justify-center px-4 py-6 border-2 rounded-xl space-y-4">
                         <img src="images/fruit6.png" alt="">
                         <h4 class="text-2xl font-bold">12.90$ - 18.85$</h4>
@@ -291,6 +295,73 @@
             </div>
          </section>
         <!-- -----deal of the day end------ -->
+
+        <!-- ------meet team section start------ -->
+         <section class="-my-40">
+          <div>
+            <div class=" w-full h-[70vh] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] rounded-2xl">
+                  
+              <div class="text-center w-2/3 mx-auto space-y-7 translate-y-28">
+                  <h1 class="text-5xl text-white font-extrabold">Meet the team section</h1>
+                  <p class="text-base text-white font-medium w-2/3 mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+              </div>
+              <div class="grid grid-cols-4 px-32">
+                <div class="flex flex-col items-center translate-y-44 space-y-3 justify-center text-center">
+                  <img class="object-scale-down w-36 h-36 " src="images/member1.png" alt="">
+                  <h3 class="text-2xl font-bold text-white">Rahmatulla</h3>
+                  <p class="text-base text-white font-medium">Fruits Expert</p>
+                  <div class="flex gap-3 justify-center text-red-500">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center translate-y-44 space-y-3 justify-center text-center">
+                  <img class="object-scale-down w-36 h-36 " src="images/member2.png" alt="">
+                  <h3 class="text-2xl font-bold text-white">Safia Chowdhury</h3>
+                  <p class="text-base text-white font-medium">Fruits Expert</p>
+                  <div class="flex gap-3 justify-center text-red-500">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center translate-y-44 space-y-3 justify-center text-center">
+                  <img class="object-scale-down w-36 h-36 " src="images/member3.png" alt="">
+                  <h3 class="text-2xl font-bold text-white">Rokib Hossain</h3>
+                  <p class="text-base text-white font-medium">Fruits Expert</p>
+                  <div class="flex gap-3 justify-center text-red-500">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center translate-y-44 space-y-3 justify-center text-center">
+                  <img class="object-scale-down w-36 h-36 " src="images/member4.png" alt="">
+                  <h3 class="text-2xl font-bold text-white">Chaiti</h3>
+                  <p class="text-base text-white font-medium">Fruits Expert</p>
+                  <div class="flex gap-3 justify-center text-red-500">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+         </section>
+        <!-- ------meet team section end------ -->
+
+        <!-- Why Choose Us start -->
+         <section class="my-72">
+          <div>
+            <div class="text-center space-y-6">
+              <h1 class="text-5xl font-extrabold">Why Choose Us</h1>
+              <p class="text-base font-medium text-gray-500 w-[640px] mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+          </div>
+         </section>
+        <!-- Why Choose Us end -->
      </main>
     <!-- main section end -->
 
